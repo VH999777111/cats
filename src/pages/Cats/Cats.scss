@@ -1,0 +1,53 @@
+.cats-page {
+  position: relative;
+  background-color: #000;
+  width: 100%;
+  min-height: 100vh;
+
+  color: #fff;
+
+  .content {
+    padding-top: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: calc(100vh - 50px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+  }
+
+  .load-more-button {
+    bottom: 0;
+    padding: 15px 5px;
+    margin-right: auto;
+    width: fit-content;
+    padding-top: 10px;
+    border: 1px solid #fff;
+    cursor: pointer;
+  }
+
+  &.light {
+    background-color: #fff;
+    color: black;
+
+    .load-more-button {
+      border-color: #000;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .cats-page {
+    .content {
+      position: relative;
+      width: calc(100vw - 300px);
+      margin-left: auto;
+    }
+    .load-more-button {
+      margin-left: auto;
+      margin-right: 10px;
+    }
+  }
+}

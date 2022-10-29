@@ -1,0 +1,29 @@
+.home-page {
+  background-color: #000;
+  height: 100vh;
+  width: 100%;
+
+  .content {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    margin-left: auto;
+    text-align: center;
+    overflow-y: hidden;
+    h3 {
+      margin-top: 150px;
+    }
+  }
+
+  &.light {
+    background-color: #fff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home-page {
+    .content {
+      width: calc(100% - 300px);
+    }
+  }
+}
